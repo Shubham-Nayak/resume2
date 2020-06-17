@@ -16,13 +16,15 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{%static 'shubham/css/styles.css'%}" rel="stylesheet" />
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=1822737637973110&autoLogAppEvents=1" nonce="8ldWpiJN"></script>
     </head>
     <body id="page-top">
         {%for i in profile %}
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"
-                ><span class="d-block d-lg-none">Clarence Taylor</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/media/{{i.images}}" alt="" /></span></a
+                ><span class="d-block d-lg-none">Clarence Taylor</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://facts24.s3.amazonaws.com/media/shubham/images/46126398_290965914734782_3538973869766528040_n.jpg" alt="" /></span></a
             ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -32,6 +34,10 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#comment">Review</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Download</a></li>
+
+
 
                 </ul>
             </div>
@@ -152,7 +158,28 @@
                     </ul>
                 </div>
             </section>
+
+            <section class="resume-section" id="comment">
+                <div class="resume-section-content">
+
+                <h2 class="mb-8">Reviews And Feedback</h2>
+
+                <div class="fbcomment mt-2 d-flex justify-content-center">
+                    <div class="fb-comments" data-href="http://shubhamnayak.herokuapp.com/" data-numposts="10" data-width=""></div>
+                </div>
+                </div>
         </div>
+        </section>
+
+        <section class="resume-section" id="resume">
+            <div class="resume-section-content">
+
+            <h2 class="mb-8" >View/Download Resume</h2>
+
+          <a href="https://drive.google.com/file/d/1f1ZC5XvZK0QUCdUtKzGD5iQZYvqF1Bz1/view?usp=sharing" class="btn btn-success" download="">Download</a>
+            </div>
+    </div>
+    </section>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
