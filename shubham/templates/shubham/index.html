@@ -118,7 +118,8 @@
                     {%for i in workflow %}
 
                         <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>{{i.title}}
+                            <span class="fa-li"><i class="fas fa-check"></i></span><a href="{{i.image_url}}">{{i.title}}</a>
+
                         </li>
                   
                   {%endfor%}
