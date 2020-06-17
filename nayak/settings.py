@@ -138,3 +138,4 @@ STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
 DEFAULT_FILE_STORAGE = 'nayak.storage_backends.MediaStorage'  # <-- here is where we reference it
 django_heroku.settings(locals())
+ 
